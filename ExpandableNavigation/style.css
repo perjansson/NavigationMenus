@@ -75,11 +75,11 @@ Main components
 
 .cd-main-content.lateral-menu-is-open {
     /* translate to show the lateral menu - all content needs to be put in the .cd-main-content to translate*/
-    -webkit-transform: translateX(210px);
-    -moz-transform: translateX(210px);
-    -ms-transform: translateX(210px);
-    -o-transform: translateX(210px);
-    transform: translateX(210px);
+    -webkit-transform: translateX(240px);
+    -moz-transform: translateX(240px);
+    -ms-transform: translateX(240px);
+    -o-transform: translateX(240px);
+    transform: translateX(240px);
 }
 
 @media only screen and (min-width: 768px) {
@@ -109,11 +109,11 @@ header {
 
 header.lateral-menu-is-open {
     /* translate to show the lateral menu */
-    -webkit-transform: translateX(210px);
-    -moz-transform: translateX(210px);
-    -ms-transform: translateX(210px);
-    -o-transform: translateX(210px);
-    transform: translateX(210px);
+    -webkit-transform: translateX(240px);
+    -moz-transform: translateX(240px);
+    -ms-transform: translateX(240px);
+    -o-transform: translateX(240px);
+    transform: translateX(240px);
 }
 
 header.is-fixed {
@@ -293,7 +293,7 @@ header.is-fixed {
 #trd-navigation ul li {
     list-style-type: none;
     display: inline;
-    margin: 0 30px
+    margin: 0 10px
 }
 
 #trd-navigation ul li:first-child {
@@ -308,7 +308,7 @@ header.is-fixed {
     visibility: hidden;
     /* the secondary navigation is covered by the main element */
     z-index: 1;
-    width: 210px;
+    width: 240px;
     background-color: #335f8b;
     overflow-y: auto;
     /* Force Hardware Acceleration in WebKit */
