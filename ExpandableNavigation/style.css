@@ -20,13 +20,15 @@ html, body {
 }
 
 body {
-    font-size: 100%;
     font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
     color: #294164;
 }
 
 a {
-    color: #6cac70;
+    text-decoration: none;
+}
+
+a:hover {
     text-decoration: none;
 }
 
@@ -73,11 +75,11 @@ Main components
 
 .cd-main-content.lateral-menu-is-open {
     /* translate to show the lateral menu - all content needs to be put in the .cd-main-content to translate*/
-    -webkit-transform: translateX(230px);
-    -moz-transform: translateX(230px);
-    -ms-transform: translateX(230px);
-    -o-transform: translateX(230px);
-    transform: translateX(230px);
+    -webkit-transform: translateX(210px);
+    -moz-transform: translateX(210px);
+    -ms-transform: translateX(210px);
+    -o-transform: translateX(210px);
+    transform: translateX(210px);
 }
 
 @media only screen and (min-width: 768px) {
@@ -107,11 +109,11 @@ header {
 
 header.lateral-menu-is-open {
     /* translate to show the lateral menu */
-    -webkit-transform: translateX(230px);
-    -moz-transform: translateX(230px);
-    -ms-transform: translateX(230px);
-    -o-transform: translateX(230px);
-    transform: translateX(230px);
+    -webkit-transform: translateX(210px);
+    -moz-transform: translateX(210px);
+    -ms-transform: translateX(210px);
+    -o-transform: translateX(210px);
+    transform: translateX(210px);
 }
 
 header.is-fixed {
@@ -287,7 +289,7 @@ header.is-fixed {
     visibility: hidden;
     /* the secondary navigation is covered by the main element */
     z-index: 1;
-    width: 230px;
+    width: 210px;
     background-color: #335f8b;
     overflow-y: auto;
     /* Force Hardware Acceleration in WebKit */

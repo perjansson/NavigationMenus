@@ -38,13 +38,12 @@ $(document).ready(function ($) {
     });
 
     // First level navigation clicked
-    $('.first-level-navigation').children('a').on('click', function (event) {
-        console.log("1 level clicked!");
+    $('.has-submenu').on('click', function (event) {
         $(this).toggleClass('submenu-open').next('.second-level-navigation').slideToggle(200).end().parent('.first-level-navigation').siblings('.first-level-navigation').children('a').removeClass('submenu-open').next('.second-level-navigation').slideUp(200);
     });
 
     // Second level navigation clicked
-    $('.second-level-navigation').children('li').children('a').on('click', function (event) {
+    $('.will-navigate').on('click', function (event) {
         console.log("2 level clicked!");
     });
 
