@@ -34,8 +34,8 @@ jQuery(document).ready(function($){
 			if($('html').hasClass('no-csstransitions')) {
 				$('body').removeClass('overflow-hidden');
 			}
-
 		}
+        console.log("Hej");
 	});
 
 	//open (or close) submenu items in the lateral menu. Close all the other open submenu items.
