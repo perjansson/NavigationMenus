@@ -281,6 +281,25 @@ header.is-fixed {
     }
 }
 
+#trd-navigation {
+    margin: 20px 0;
+}
+
+#trd-navigation ul {
+    padding: 0px;
+    font-size: 1.1em;
+}
+
+#trd-navigation ul li {
+    list-style-type: none;
+    display: inline;
+    margin: 0 30px
+}
+
+#trd-navigation ul li:first-child {
+    margin-left: 2px
+}
+
 #cd-lateral-nav {
     position: fixed;
     height: 100%;

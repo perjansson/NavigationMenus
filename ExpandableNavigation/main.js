@@ -48,6 +48,18 @@ $(document).ready(function ($) {
         console.log("2 level clicked!");
     });
 
+    $('.has-trd-navigation').on('click', function (event) {
+        $('#trd-navigation').show();
+    });
+
+    $('.has-no-trd-navigation').on('click', function (event) {
+        $('#trd-navigation').hide();
+    });
+
+    $('.is-trd-level-navigation').on('click', function (event) {
+        event.preventDefault();
+    });
+
     $(window).on('hashchange', function () {
         $('#header').text(location.hash.slice(1));
     });
