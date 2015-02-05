@@ -72,11 +72,11 @@ Main components
 }
 .cd-main-content.lateral-menu-is-open {
   /* translate to show the lateral menu - all content needs to be put in the .cd-main-content to translate*/
-  -webkit-transform: translateX(-300px);
-  -moz-transform: translateX(-300px);
-  -ms-transform: translateX(-300px);
-  -o-transform: translateX(-300px);
-  transform: translateX(-300px);
+  -webkit-transform: translateX(280px);
+  -moz-transform: translateX(280px);
+  -ms-transform: translateX(280px);
+  -o-transform: translateX(280px);
+  transform: translateX(280px);
 }
 @media only screen and (min-width: 768px) {
   .cd-main-content {
@@ -104,11 +104,11 @@ header {
 }
 header.lateral-menu-is-open {
   /* translate to show the lateral menu */
-  -webkit-transform: translateX(-300px);
-  -moz-transform: translateX(-300px);
-  -ms-transform: translateX(-300px);
-  -o-transform: translateX(-300px);
-  transform: translateX(-300px);
+  -webkit-transform: translateX(280px);
+  -moz-transform: translateX(280px);
+  -ms-transform: translateX(280px);
+  -o-transform: translateX(280px);
+  transform: translateX(280px);
 }
 header.is-fixed {
   position: fixed;
@@ -169,7 +169,7 @@ header.is-fixed {
 
 #cd-menu-trigger {
   position: absolute;
-  right: 0;
+  left: 0;
   top: 0;
   height: 100%;
   width: 50px;
@@ -259,12 +259,12 @@ header.is-fixed {
 #cd-lateral-nav {
   position: fixed;
   height: 100%;
-  right: 0;
+  left: 0;
   top: 0;
   visibility: hidden;
   /* the secondary navigation is covered by the main element */
   z-index: 1;
-  width: 300px;
+  width: 280px;
   background-color: #000;
   overflow-y: auto;
   /* Force Hardware Acceleration in WebKit */
@@ -274,11 +274,11 @@ header.is-fixed {
   -moz-transition: -moz-transform .4s 0s, visibility 0s .4s;
   transition: transform .4s 0s, visibility 0s .4s;
   /* this creates the subtle slide in animation of the navigation */
-  -webkit-transform: translateX(80px);
-  -moz-transform: translateX(80px);
-  -ms-transform: translateX(80px);
-  -o-transform: translateX(80px);
-  transform: translateX(80px);
+  -webkit-transform: translateX(-80px);
+  -moz-transform: translateX(-80px);
+  -ms-transform: translateX(-80px);
+  -o-transform: translateX(-80px);
+  transform: translateX(-80px);
 }
 #cd-lateral-nav .cd-navigation {
   margin: 10px 0 16px;
@@ -290,7 +290,7 @@ header.is-fixed {
 #cd-lateral-nav a {
   display: block;
   line-height: 2em;
-  padding: 0 16px 0 32px;
+  padding: 0 16px 0 0px;
   color: #fff;
 }
 #cd-lateral-nav a.current {
