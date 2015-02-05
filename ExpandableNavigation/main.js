@@ -39,6 +39,7 @@ $(document).ready(function ($) {
 
     // First level navigation clicked
     $('.has-submenu').on('click', function (event) {
+        event.preventDefault();
         $(this).toggleClass('submenu-open').next('.second-level-navigation').slideToggle(200).end().parent('.first-level-navigation').siblings('.first-level-navigation').children('a').removeClass('submenu-open').next('.second-level-navigation').slideUp(200);
     });
 
