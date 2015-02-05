@@ -21,9 +21,8 @@ html, body {
 
 body {
     font-size: 100%;
-    font-family: "Titillium Web", sans-serif;
+    font-family: Calibri, Candara, Segoe, 'Segoe UI', Optima, Arial, sans-serif;
     color: #294164;
-    background-color: #fff;
 }
 
 a {
@@ -57,6 +56,7 @@ Main components
     /* set a min-height and a z-index to be sure that the main element completely covers the lateral menu */
     min-height: 100%;
     position: relative;
+    padding-left: 20px;
     background-color: #fff;
     z-index: 2;
     padding-top: 50px;
@@ -73,11 +73,11 @@ Main components
 
 .cd-main-content.lateral-menu-is-open {
     /* translate to show the lateral menu - all content needs to be put in the .cd-main-content to translate*/
-    -webkit-transform: translateX(280px);
-    -moz-transform: translateX(280px);
-    -ms-transform: translateX(280px);
-    -o-transform: translateX(280px);
-    transform: translateX(280px);
+    -webkit-transform: translateX(230px);
+    -moz-transform: translateX(230px);
+    -ms-transform: translateX(230px);
+    -o-transform: translateX(230px);
+    transform: translateX(230px);
 }
 
 @media only screen and (min-width: 768px) {
@@ -107,11 +107,11 @@ header {
 
 header.lateral-menu-is-open {
     /* translate to show the lateral menu */
-    -webkit-transform: translateX(280px);
-    -moz-transform: translateX(280px);
-    -ms-transform: translateX(280px);
-    -o-transform: translateX(280px);
-    transform: translateX(280px);
+    -webkit-transform: translateX(230px);
+    -moz-transform: translateX(230px);
+    -ms-transform: translateX(230px);
+    -o-transform: translateX(230px);
+    transform: translateX(230px);
 }
 
 header.is-fixed {
@@ -161,7 +161,6 @@ header.is-fixed {
 #cd-top-nav a {
     display: inline-block;
     padding: .5em;
-    color: #335f8b;
     text-transform: uppercase;
     font-weight: 600;
 }
@@ -192,7 +191,6 @@ header.is-fixed {
 #cd-menu-trigger .cd-menu-text {
     height: 100%;
     text-transform: uppercase;
-    color: #335f8b;
     font-weight: 600;
     display: none;
 }
@@ -289,7 +287,7 @@ header.is-fixed {
     visibility: hidden;
     /* the secondary navigation is covered by the main element */
     z-index: 1;
-    width: 280px;
+    width: 230px;
     background-color: #335f8b;
     overflow-y: auto;
     /* Force Hardware Acceleration in WebKit */
@@ -314,7 +312,7 @@ header.is-fixed {
     margin: 10px 0 16px;
 }
 
-#cd-lateral-nav .sub-menu {
+#cd-lateral-nav .second-level-navigation {
     padding: 0 10px 20px 15px;
     display: none;
 }
@@ -327,12 +325,9 @@ header.is-fixed {
 }
 
 #cd-lateral-nav a.current {
-    background-color: #fff;
-    color: #335f8b;
 }
 
 .no-touch #cd-lateral-nav a:hover {
-    color: #fff;
 }
 
 @media only screen and (min-width: 768px) {
@@ -356,14 +351,14 @@ header.is-fixed {
 }
 
 /* style menu items which have a submenu  */
-#cd-lateral-nav .item-has-children > a {
+#cd-lateral-nav .first-level-navigation > a {
     position: relative;
     text-transform: uppercase;
     font-weight: 600;
     /* this is the right arrow to show that the item has a submenu  */
 }
 
-#cd-lateral-nav .item-has-children > a::after {
+#cd-lateral-nav .first-level-navigation > a::after {
     content: '';
     display: block;
     height: 11px;
@@ -381,74 +376,15 @@ header.is-fixed {
     -webkit-transition-property: -webkit-transform;
     -moz-transition-property: -moz-transform;
     transition-property: transform;
-    -webkit-transition-duration: 0.2s;
-    -moz-transition-duration: 0.2s;
-    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    transition-duration: 0.4s;
 }
 
-#cd-lateral-nav .item-has-children > a.submenu-open::after {
+#cd-lateral-nav .first-level-navigation > a.submenu-open::after {
     -webkit-transform: translateY(-50%) rotate(90deg);
     -moz-transform: translateY(-50%) rotate(90deg);
     -ms-transform: translateY(-50%) rotate(90deg);
     -o-transform: translateY(-50%) rotate(90deg);
     transform: translateY(-50%) rotate(90deg);
-}
-
-#cd-lateral-nav .socials {
-    padding: 0 32px;
-}
-
-#cd-lateral-nav .socials:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#cd-lateral-nav .socials a {
-    height: 32px;
-    width: 32px;
-    float: left;
-    padding: 0;
-    background-image: url("../img/cd-socials.svg");
-    background-repeat: no-repeat;
-    background-size: 128px 64px;
-    background-color: #fff;
-    margin-right: .5em;
-    border-radius: 0.25em;
-}
-
-#cd-lateral-nav .socials a.cd-twitter {
-    background-position: 0 0;
-}
-
-#cd-lateral-nav .socials a.cd-github {
-    background-position: -32px 0;
-}
-
-#cd-lateral-nav .socials a.cd-facebook {
-    background-position: -64px 0;
-}
-
-#cd-lateral-nav .socials a.cd-google {
-    background-position: -96px 0;
-}
-
-.no-touch #cd-lateral-nav .socials a:hover {
-    background-color: #4e6361;
-}
-
-.no-touch #cd-lateral-nav .socials a:hover.cd-twitter {
-    background-position: 0 -32px;
-}
-
-.no-touch #cd-lateral-nav .socials a:hover.cd-github {
-    background-position: -32px -32px;
-}
-
-.no-touch #cd-lateral-nav .socials a:hover.cd-facebook {
-    background-position: -64px -32px;
-}
-
-.no-touch #cd-lateral-nav .socials a:hover.cd-google {
-    background-position: -96px -32px;
 }
